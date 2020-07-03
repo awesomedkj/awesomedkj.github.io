@@ -174,142 +174,41 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="基础语法"><a href="#基础语法" class="headerlink" title="基础语法"></a>基础语法</h2><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1 标题"></a>1 标题</h3><ol>
-<li>1级标题</li>
-</ol>
-<p>使用<code>=</code>（一个以上）或者<code>#</code>（一个）</p>
-<ol start="2">
-<li>2级标题</li>
-</ol>
-<p>使用<code>-</code>（一个以上）或者<code>#</code>（两个）</p>
-<ol start="3">
-<li>3-6级标题</li>
-</ol>
-<p>使用#（3-6个）</p>
+        <h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1 标题"></a>1 标题</h3><p>1.1级标题<br>   使用<code>=</code>（一个以上）或者<code>#</code>（一个）<br>2.2级标题<br>   使用<code>-</code>（一个以上）或者<code>#</code>（两个）<br>3.3-6级标题<br>   使用#（3-6个）</p>
 <h3 id="2-段落"><a href="#2-段落" class="headerlink" title="2 段落"></a>2 段落</h3><ol>
-<li>换行</li>
+<li>换行<br>使用两个以上空格加回车</li>
+<li>字体<ol>
+<li>斜体<br>使用一对<code>*</code>或者<code>_</code></li>
+<li>粗体<br>使用一对<code>**</code>或者<code>__</code></li>
+<li>粗斜体<br>使用一对<code>***</code>或者<code>___</code></li>
 </ol>
-<ul>
-<li>使用两个以上空格加回车</li>
-</ul>
-<ol start="2">
-<li><p>字体</p>
-<ol>
-<li>斜体</li>
-</ol>
-<ul>
-<li>使用一对<code>*</code>或者<code>_</code></li>
-</ul>
-<ol start="2">
-<li>粗体</li>
-</ol>
-<ul>
-<li>使用一对<code>**</code>或者<code>__</code></li>
-</ul>
-<ol start="3">
-<li>粗斜体</li>
-</ol>
-<ul>
-<li>使用一对<code>***</code>或者<code>___</code></li>
-</ul>
 </li>
-<li><p>分割线</p>
-</li>
-</ol>
-<ul>
-<li>使用两个以上的<code>*</code>、<code>-</code>或者<code>_</code></li>
-</ul>
-<ol start="4">
-<li>删除线</li>
-</ol>
-<ul>
-<li>使用波浪线<code>~~删除线文本~~</code></li>
-</ul>
-<ol start="5">
-<li>下划线</li>
-</ol>
-<ul>
-<li>使用HTML的标签<code>&lt;u&gt;下划线文本&lt;/u&gt;</code></li>
-</ul>
-<ol start="6">
-<li>脚注</li>
-</ol>
-<ul>
-<li>使用<code>[^脚注]</code> +<code>[^脚注]:脚注内容</code></li>
-</ul>
-<ol start="7">
-<li>角标</li>
-</ol>
-<ul>
-<li>上角标：使用<code>x^2^</code>–x^2^</li>
-<li>下角标：使用<code>H~2~O</code>–H<del>2</del>O</li>
-</ul>
-<ol start="8">
-<li>高亮</li>
-</ol>
-<ul>
-<li>使用等号<code>==高亮文本==</code></li>
-</ul>
-<blockquote>
+<li>分割线<br>使用两个以上的<code>*</code>、<code>-</code>或者<code>_</code></li>
+<li>删除线<br>使用波浪线<code>~~删除线文本~~</code></li>
+<li>下划线<br>使用HTML的标签<code>&lt;u&gt;下划线文本&lt;/u&gt;</code></li>
+<li>脚注<br>使用<code>[^脚注]</code> +<code>[^脚注]:脚注内容</code></li>
+<li>角标<br>上角标：使用<code>x^2^</code>–x^2^<br>下角标：使用<code>H~2~O</code>–H<del>2</del>O</li>
+<li>高亮<br>使用等号<code>==高亮文本==</code><blockquote>
 <p>角标和高亮在设置中打开</p>
 </blockquote>
-<ol start="9">
-<li>居中</li>
-</ol>
-<ul>
-<li>使用HTML的标签<code>&lt;center&gt;居中文本&lt;/center&gt;</code></li>
-</ul>
-<ol start="10">
-<li>目录</li>
-</ol>
-<ul>
-<li>使用<code>[TOC]</code></li>
-</ul>
-<ol start="11">
-<li>表情</li>
-</ol>
-<ul>
-<li>使用<code>:单词:</code></li>
-</ul>
-<h3 id="3-列表"><a href="#3-列表" class="headerlink" title="3 列表"></a>3 列表</h3><p>可分为<strong>有序列表</strong>和<strong>无序列表</strong>，可嵌套使用</p>
-<ol>
-<li>有序列表</li>
-</ol>
-<p>使用<code>数字</code> + <code>.</code> + <code>空格</code></p>
-<ol start="2">
-<li>无序列表</li>
-</ol>
-<p>使用<code>*</code>、<code>+</code>或者<code>-</code> + <code>空格</code></p>
-<h3 id="4-区块"><a href="#4-区块" class="headerlink" title="4 区块"></a>4 区块</h3><p>使用<code>&gt;</code> + <code>空格</code>，可嵌套，并可与列表嵌套</p>
-<h3 id="5-代码"><a href="#5-代码" class="headerlink" title="5 代码"></a>5 代码</h3><ol>
-<li>一行代码</li>
-</ol>
-<p>使用一对反引号</p>
-<ol start="2">
-<li>一段代码</li>
-</ol>
-<p>使用三个反引号</p>
-<h3 id="6-链接"><a href="#6-链接" class="headerlink" title="6 链接"></a>6 链接</h3><ol>
-<li><p>使用<code>[链接名称](链接地址)</code>（链接名称可省略）</p>
 </li>
-<li><p>使用<code>[链接名称][变量]</code>（与脚注类似）</p>
-</li>
-</ol>
-<h3 id="7-图片"><a href="#7-图片" class="headerlink" title="7 图片"></a>7 图片</h3><ol>
+<li>居中<br>使用HTML的标签<code>&lt;center&gt;居中文本&lt;/center&gt;</code></li>
+<li>目录<br>使用<code>[TOC]</code></li>
+<li>表情<br>使用<code>:单词:</code><h3 id="3-列表"><a href="#3-列表" class="headerlink" title="3 列表"></a>3 列表</h3>可分为<strong>有序列表</strong>和<strong>无序列表</strong>，可嵌套使用</li>
+<li>有序列表<br>使用<code>数字</code> + <code>.</code> + <code>空格</code></li>
+<li>无序列表<br>使用<code>*</code>、<code>+</code>或者<code>-</code> + <code>空格</code><h3 id="4-区块"><a href="#4-区块" class="headerlink" title="4 区块"></a>4 区块</h3>使用<code>&gt;</code> + <code>空格</code>，可嵌套，并可与列表嵌套<h3 id="5-代码"><a href="#5-代码" class="headerlink" title="5 代码"></a>5 代码</h3></li>
+<li>一行代码<br>使用一对反引号</li>
+<li>一段代码<br>使用三个反引号<h3 id="6-链接"><a href="#6-链接" class="headerlink" title="6 链接"></a>6 链接</h3></li>
+<li>使用<code>[链接名称](链接地址)</code>（链接名称可省略）</li>
+<li>使用<code>[链接名称][变量]</code>（与脚注类似）<h3 id="7-图片"><a href="#7-图片" class="headerlink" title="7 图片"></a>7 图片</h3></li>
 <li>使用<code>![alt 属性文本](图片地址)</code></li>
-<li>把图片直接拖入文档自动创建</li>
-</ol>
-<h3 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h3><ol>
+<li>把图片直接拖入文档自动创建<h3 id="8-表格"><a href="#8-表格" class="headerlink" title="8 表格"></a>8 表格</h3></li>
 <li>使用<code>|</code>来分隔单元格</li>
 <li>使用<code>-</code>来分隔表头</li>
 <li>对齐方式<ul>
 <li>左对齐：<code>:-</code></li>
 <li>右对齐：<code>-:</code></li>
-<li>居中对齐：<code>:-:</code></li>
-</ul>
-</li>
-</ol>
-<h2 id="附：快捷键"><a href="#附：快捷键" class="headerlink" title="附：快捷键"></a>附：快捷键</h2><table>
+<li>居中对齐：<code>:-:</code><h2 id="附：快捷键"><a href="#附：快捷键" class="headerlink" title="附：快捷键"></a>附：快捷键</h2><table>
 <thead>
 <tr>
 <th align="center">快捷键</th>
@@ -385,6 +284,10 @@
 <td align="center">引用</td>
 </tr>
 </tbody></table>
+</li>
+</ul>
+</li>
+</ol>
 
       
 
