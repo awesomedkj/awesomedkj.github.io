@@ -18,7 +18,7 @@
 <meta property="og:description" content="if 语句、for 语句和 while 语句">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-04T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-07-04T23:49:19.740Z">
+<meta property="article:modified_time" content="2020-07-05T00:19:52.131Z">
 <meta property="article:author" content="丁康健">
 <meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary">
@@ -220,7 +220,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">101字</span>
+      <span class="post-count">104字</span>
     </span>
   </span>
 
@@ -240,18 +240,23 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>if 语句、for 语句和 while 语句</p>
+    <blockquote>
+<p>if 语句、for 语句和 while 语句</p>
+</blockquote>
 <a id="more"></a>
-<h3 id="if-语句"><a href="#if-语句" class="headerlink" title="if 语句"></a>if 语句</h3><p><strong>格式</strong>：<code>if...:[block] elif...:[block] else...:[block]</code></p>
+
+<h3 id="1-if-语句"><a href="#1-if-语句" class="headerlink" title="1 if 语句"></a>1 if 语句</h3><p><strong>格式</strong>：<code>if...:[block] elif...:[block] else...:[block]</code></p>
 <blockquote>
 <p>关键字 <code>elif</code>  是 <code>else if</code>  的缩写</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">x = int(input(<span class="string">"Please enter an integer: "</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">0</span>:</span><br><span class="line">	x = <span class="number">0</span></span><br><span class="line">	print(<span class="string">'Negative changed to zero'</span>)</span><br><span class="line"><span class="keyword">elif</span> x == <span class="number">0</span>:</span><br><span class="line">	print(<span class="string">'Zero'</span>)</span><br><span class="line"><span class="keyword">elif</span> x == <span class="number">1</span>:</span><br><span class="line">	print(<span class="string">'Single'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	print(<span class="string">'More'</span>)</span><br></pre></td></tr></table></figure>
 
-<h3 id="for-语句"><a href="#for-语句" class="headerlink" title="for 语句"></a>for 语句</h3><p><strong>格式</strong>：<code>for...in...:[block]</code></p>
+
+<h3 id="2-for-语句"><a href="#2-for-语句" class="headerlink" title="2 for 语句"></a>2 for 语句</h3><p><strong>格式</strong>：<code>for...in...:[block]</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">words = [<span class="string">'cat'</span>, <span class="string">'window'</span>, <span class="string">'defenestrate'</span>]</span><br><span class="line"><span class="keyword">for</span> w <span class="keyword">in</span> words:</span><br><span class="line">	print(w,len(w))</span><br></pre></td></tr></table></figure>
 
-<h3 id="while-语句"><a href="#while-语句" class="headerlink" title="while 语句"></a>while 语句</h3><p><strong>格式</strong>：<code>while...:[block]</code></p>
+
+<h3 id="3-while-语句"><a href="#3-while-语句" class="headerlink" title="3 while 语句"></a>3 while 语句</h3><p><strong>格式</strong>：<code>while...:[block]</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a, b = <span class="number">0</span>, <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> a &lt; <span class="number">10</span>:</span><br><span class="line">	a, b = b, a + b</span><br></pre></td></tr></table></figure>
 
     
@@ -412,7 +417,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#if-语句"><span class="toc-number">1.</span> <span class="toc-text">if 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#for-语句"><span class="toc-number">2.</span> <span class="toc-text">for 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#while-语句"><span class="toc-number">3.</span> <span class="toc-text">while 语句</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-if-语句"><span class="toc-number">1.</span> <span class="toc-text">1 if 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-for-语句"><span class="toc-number">2.</span> <span class="toc-text">2 for 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-while-语句"><span class="toc-number">3.</span> <span class="toc-text">3 while 语句</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -544,19 +549,19 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">编程</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Markdown</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
+                <a href="javascript:void(0)" class="js-tag color3">编程</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
               </li>
             
             <div class="clearfix"></div>
