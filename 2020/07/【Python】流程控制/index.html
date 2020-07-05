@@ -18,7 +18,7 @@
 <meta property="og:description" content="if 语句、for 语句和 while 语句">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-04T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-07-05T12:34:20.666Z">
+<meta property="article:modified_time" content="2020-07-05T16:30:52.337Z">
 <meta property="article:author" content="丁康健">
 <meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary">
@@ -101,7 +101,7 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" href="https://github.com/awesomedkj" target="_blank" rel="noopener" title="GitHub" ><i class="icon-github"></i></a>
+					<a class="github" href="https://github.com/actionding" target="_blank" rel="noopener" title="GitHub" ><i class="icon-github"></i></a>
 				
 					<a class="zhihu" href="https://www.zhihu.com/people/clare-54-32-87" target="_blank" rel="noopener" title="知乎" ><i class="icon-zhihu"></i></a>
 				
@@ -118,7 +118,7 @@
       
       
       <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;" 
-        href="https://github.com/awesomedkj" target="_blank">
+        href="https://github.com/actionding" target="_blank">
         <img src="/img/forkme.png"
           class="attachment-full size-full" alt="My GitHub" data-recalc-dims="1"></a>
       
@@ -154,7 +154,7 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="https://github.com/awesomedkj" title="GitHub"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/actionding" title="GitHub"><i class="icon-github"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/clare-54-32-87" title="知乎"><i class="icon-zhihu"></i></a>
 			        
@@ -243,18 +243,18 @@
     <p>if 语句、for 语句和 while 语句</p>
 <a id="more"></a>
 
-<h3 id="1-if-语句"><a href="#1-if-语句" class="headerlink" title="1 if 语句"></a>1 if 语句</h3><p><strong>格式</strong>：<code>if...:[block] elif...:[block] else...:[block]</code></p>
+<h3 id="一、if-语句"><a href="#一、if-语句" class="headerlink" title="一、if 语句"></a>一、if 语句</h3><p><strong>格式</strong>：<code>if...:[block] elif...:[block] else...:[block]</code></p>
 <blockquote>
 <p>关键字 <code>elif</code>  是 <code>else if</code>  的缩写</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">x = int(input(<span class="string">"Please enter an integer: "</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> x &lt; <span class="number">0</span>:</span><br><span class="line">	x = <span class="number">0</span></span><br><span class="line">	print(<span class="string">'Negative changed to zero'</span>)</span><br><span class="line"><span class="keyword">elif</span> x == <span class="number">0</span>:</span><br><span class="line">	print(<span class="string">'Zero'</span>)</span><br><span class="line"><span class="keyword">elif</span> x == <span class="number">1</span>:</span><br><span class="line">	print(<span class="string">'Single'</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	print(<span class="string">'More'</span>)</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="2-for-语句"><a href="#2-for-语句" class="headerlink" title="2 for 语句"></a>2 for 语句</h3><p><strong>格式</strong>：<code>for...in...:[block]</code></p>
+<h3 id="二、for-语句"><a href="#二、for-语句" class="headerlink" title="二、for 语句"></a>二、for 语句</h3><p><strong>格式</strong>：<code>for...in...:[block]</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">words = [<span class="string">'cat'</span>, <span class="string">'window'</span>, <span class="string">'defenestrate'</span>]</span><br><span class="line"><span class="keyword">for</span> w <span class="keyword">in</span> words:</span><br><span class="line">	print(w,len(w))</span><br></pre></td></tr></table></figure>
 
 
-<h3 id="3-while-语句"><a href="#3-while-语句" class="headerlink" title="3 while 语句"></a>3 while 语句</h3><p><strong>格式</strong>：<code>while...:[block]</code></p>
+<h3 id="三、while-语句"><a href="#三、while-语句" class="headerlink" title="三、while 语句"></a>三、while 语句</h3><p><strong>格式</strong>：<code>while...:[block]</code></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a, b = <span class="number">0</span>, <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> a &lt; <span class="number">10</span>:</span><br><span class="line">	a, b = b, a + b</span><br></pre></td></tr></table></figure>
 
     
@@ -415,7 +415,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-if-语句"><span class="toc-number">1.</span> <span class="toc-text">1 if 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-for-语句"><span class="toc-number">2.</span> <span class="toc-text">2 for 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-while-语句"><span class="toc-number">3.</span> <span class="toc-text">3 while 语句</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、if-语句"><span class="toc-number">1.</span> <span class="toc-text">一、if 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、for-语句"><span class="toc-number">2.</span> <span class="toc-text">二、for 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、while-语句"><span class="toc-number">3.</span> <span class="toc-text">三、while 语句</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -547,11 +547,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">编程</a>
+                <a href="javascript:void(0)" class="js-tag color5">test</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">test</a>
+                <a href="javascript:void(0)" class="js-tag color3">编程</a>
               </li>
              
               <li class="article-tag-list-item">
