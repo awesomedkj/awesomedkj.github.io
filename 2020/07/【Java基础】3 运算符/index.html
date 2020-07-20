@@ -6,26 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://ActionDing.github.io">
-  <title>【Java基础】第一个Java程序 | 首页-丁康健的个人博客</title>
+  <title>【Java基础】3 运算符 | 首页-丁康健的个人博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="国际惯例 123456&#x2F;&#x2F; 打印 Hello Worldpublic class HelloWorld &amp;#123;    public static void main(String[] args) &amp;#123;        System.out.println(&quot;Hello World&quot;);    &amp;#125;&amp;#125;">
+  <meta name="description" content="算数运算符、赋值运算符、比较运算符、逻辑运算符、位运算符、三元运算符">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Java基础】第一个Java程序">
-<meta property="og:url" content="https://actionding.github.io/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%91%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/index.html">
+<meta property="og:title" content="【Java基础】3 运算符">
+<meta property="og:url" content="https://actionding.github.io/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%913%20%E8%BF%90%E7%AE%97%E7%AC%A6/index.html">
 <meta property="og:site_name" content="首页-丁康健的个人博客">
-<meta property="og:description" content="国际惯例 123456&#x2F;&#x2F; 打印 Hello Worldpublic class HelloWorld &amp;#123;    public static void main(String[] args) &amp;#123;        System.out.println(&quot;Hello World&quot;);    &amp;#125;&amp;#125;">
+<meta property="og:description" content="算数运算符、赋值运算符、比较运算符、逻辑运算符、位运算符、三元运算符">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://actionding.github.io/2020/07/images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
-<meta property="og:image" content="https://actionding.github.io/2020/07/images/helloworld.png">
-<meta property="article:published_time" content="2020-07-04T19:02:02.000Z">
-<meta property="article:modified_time" content="2020-07-19T08:44:27.267Z">
+<meta property="article:published_time" content="2020-07-04T19:02:04.000Z">
+<meta property="article:modified_time" content="2020-07-20T03:17:14.429Z">
 <meta property="article:author" content="丁康健">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://actionding.github.io/2020/07/images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
   
     <link rel="alternative" href="/atom.xml" title="首页-丁康健的个人博客" type="application/atom+xml">
   
@@ -191,14 +188,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-【Java基础】第一个Java程序" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-【Java基础】3 运算符" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      【Java基础】第一个Java程序
+      【Java基础】3 运算符
     </h1>
   
 
@@ -210,8 +207,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%91%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/" class="archive-article-date">
-        <time datetime="2020-07-04T19:02:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
+<a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%913%20%E8%BF%90%E7%AE%97%E7%AC%A6/" class="archive-article-date">
+        <time datetime="2020-07-04T19:02:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
 </a>
 
   
@@ -224,7 +221,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">404字</span>
+      <span class="post-count">654字</span>
     </span>
   </span>
 
@@ -233,7 +230,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">2分</span>
     </span>
   </span>
 </div>
@@ -244,33 +241,84 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p><strong>国际惯例</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 打印 Hello World</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+    <p>算数运算符、赋值运算符、比较运算符、逻辑运算符、位运算符、三元运算符</p>
 <a id="more"></a>
 
-<h3 id="一、第一个Java程序"><a href="#一、第一个Java程序" class="headerlink" title="一、第一个Java程序"></a>一、第一个Java程序</h3><h4 id="1-编译运行过程"><a href="#1-编译运行过程" class="headerlink" title="1 编译运行过程"></a>1 编译运行过程</h4><p>①将 Java 代码编写到扩展名为 .java 的文件中。</p>
-<p>②通过 javac 命令对该 java 文件进行<strong>编译</strong> 。</p>
-<p>③通过 java 命令对生成的 class 文件进行<strong>运行</strong> 。</p>
-<p><img src="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%91%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png" alt="编译运行过程"></p>
-<h4 id="2-具体步骤"><a href="#2-具体步骤" class="headerlink" title="2 具体步骤"></a>2 具体步骤</h4><p><strong>步骤一</strong>：打开记事本，输入以上代码，保存为 <code>HelloWorld.java</code></p>
-<p><strong>步骤二</strong>：在保存文件的位置打开命令行，输入<code>javac HelloWorld.java</code>，会生成一个HelloWorld.class文件</p>
-<p><strong>步骤三</strong>：命令行继续输入<code>java HelloWorld</code></p>
-<p><img src="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%91%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/../images/helloworld.png" alt="helloworld"></p>
-<h3 id="二、注释"><a href="#二、注释" class="headerlink" title="二、注释"></a>二、注释</h3><h4 id="1-单行注释"><a href="#1-单行注释" class="headerlink" title="1 单行注释"></a>1 单行注释</h4><p>​    格式：//注释文字</p>
-<h4 id="2-多行注释"><a href="#2-多行注释" class="headerlink" title="2 多行注释"></a>2 多行注释</h4><p>​    格式：/* 注释文字 */</p>
-<h4 id="3-文档注释"><a href="#3-文档注释" class="headerlink" title="3 文档注释"></a>3 文档注释</h4><p>​    <strong>格式</strong>：/**</p>
-<p>​                @author 指定 java 程序的作者<br>​                @version 指定源文件的版本<br>​                */</p>
-<p>​    注释内容可以被 JDK 提供的工具 javadoc 所解析，生成一套以网页文件形式体现的该程序的说明文档。</p>
-<p>​    <strong>操作方式</strong>：<code>javadoc -d mydoc -author -version HelloWorld.java</code></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">1. Java注释的三种方式：</span></span><br><span class="line"><span class="comment">①单行注释</span></span><br><span class="line"><span class="comment">②多行注释</span></span><br><span class="line"><span class="comment">③文档注释（Java特有）</span></span><br><span class="line"><span class="comment">	生成文档：javadoc -d mydoc -author -version HelloJava.java</span></span><br><span class="line"><span class="comment">	mydoc为文档目录</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*****这属于多行注释*****</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"><span class="doctag">@author</span> Ding</span></span><br><span class="line"><span class="comment"><span class="doctag">@version</span> 1.0</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*****这属于文档注释*****</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloJava</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//main方法是程序的入口	*****这属于单行注释*****</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//打印HelloJava	</span></span><br><span class="line">		System.out.println(<span class="string">"HelloJava"</span>);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="一、算术运算符"><a href="#一、算术运算符" class="headerlink" title="一、算术运算符"></a>一、算术运算符</h3><table>
+<thead>
+<tr>
+<th align="center"><code>+</code></th>
+<th align="center"><code>-</code></th>
+<th align="center"><code>+</code></th>
+<th align="center"><code>-</code></th>
+<th align="center"><code>*</code></th>
+<th align="center"><code>/</code></th>
+<th align="center"><code>%</code></th>
+<th align="center"><code>++</code></th>
+<th align="center"><code>--</code></th>
+<th align="center"><code>++</code></th>
+<th align="center"><code>--</code></th>
+<th align="center"><code>+</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">正号</td>
+<td align="center">负号</td>
+<td align="center">加</td>
+<td align="center">减</td>
+<td align="center">乘</td>
+<td align="center">除</td>
+<td align="center">取余</td>
+<td align="center">前自增</td>
+<td align="center">前自减</td>
+<td align="center">后自增</td>
+<td align="center">后自减</td>
+<td align="center">字符串连接</td>
+</tr>
+</tbody></table>
+<p><strong>1 自增</strong></p>
+<p>​    (前)++：先自增1，后运算<br>​    (后)++：先运算，后自增1</p>
+<p><strong>2 自减</strong></p>
+<p>​    (前)–：先自减1，后运算<br>​    (后)–：先运算，后自减1</p>
+<p><strong>3 连接符</strong>：+（只能使用在String与其他数据类型变量之间使用）</p>
+<h3 id="二、赋值运算符"><a href="#二、赋值运算符" class="headerlink" title="二、赋值运算符"></a>二、赋值运算符</h3><p><code>=</code>、<code>+=</code>、<code>-=</code>、<code>*=</code>、<code>/=</code>、<code>%=</code></p>
+<p><strong>注</strong>：运算的结果不会改变变量本身的数据类型</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//开发中，如果希望变量实现+2的操作，有几种方法？(前提：int num = 10;)</span></span><br><span class="line"><span class="comment">//方式一：num = num + 2;</span></span><br><span class="line"><span class="comment">//方式二：num += 2; (推荐)</span></span><br></pre></td></tr></table></figure>
 
 
-
-<h3 id="附"><a href="#附" class="headerlink" title="附"></a>附</h3><p><strong>Tips | 文件资源管理器</strong></p>
-<p>①<code>win + E</code>打开文件资源管理器</p>
-<p>②在地址栏输入 <code>cmd</code> 回车即可打开<strong>命令行</strong></p>
-<p>③在查看工具栏中，打开<code>隐藏/显示</code>中的 <code>文件扩展名</code></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//开发中，如果希望变量实现+1的操作，有几种方法？(前提：int num = 10;)</span></span><br><span class="line"><span class="comment">//方式一：num = num + 1;</span></span><br><span class="line"><span class="comment">//方式二：num += 1; </span></span><br><span class="line"><span class="comment">//方式三：num++; (推荐)</span></span><br></pre></td></tr></table></figure>
+<h3 id="三、比较运算符"><a href="#三、比较运算符" class="headerlink" title="三、比较运算符"></a>三、比较运算符</h3><p>也叫<strong>关系运算符</strong></p>
+<p><code>==</code>、<code>!=</code>、<code>&lt;</code>、<code>&gt;</code>、<code>&lt;=</code>、<code>&gt;=</code>、<code>instanceof</code></p>
+<blockquote>
+<p>比较运算符的结果都是 boolean 型</p>
+<ol>
+<li><p>&lt;  &gt;=  &lt;= :只能使用在数值类型的数据之间。</p>
+</li>
+<li><p>== 和 !=: 不仅可以使用在数值类型数据之间，还可以使用在其他引用类型变量之间。</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="四、逻辑运算符"><a href="#四、逻辑运算符" class="headerlink" title="四、逻辑运算符"></a>四、逻辑运算符</h3><p>|  <code>&amp;</code>   |  <code>&amp;&amp;</code>  |  <code>|</code>   |  <code>||</code>  |  <code>!</code>   |   <code>^</code>    |<br>| :—-: | :—-: | :—-: | :—-: | :—-: | :——: |<br>| 逻辑与 | 短路与 | 逻辑或 | 短路或 | 逻辑非 | 逻辑异或 |</p>
+<blockquote>
+<p>逻辑运算符操作的都是boolean类型的变量，而且结果也是boolean类型</p>
+</blockquote>
+<h3 id="五、位运算符"><a href="#五、位运算符" class="headerlink" title="五、位运算符"></a>五、位运算符</h3><p>| <code>&lt;&lt;</code> | <code>&gt;&gt;</code> |   <code>&gt;&gt;&gt;</code>    |  <code>&amp;</code>   |  <code>|</code>   |   <code>^</code>    |   <code>~</code>    |<br>| :–: | :–: | :——–: | :—-: | :—-: | :——: | :——: |<br>| 左移 | 右移 | 无符号右移 | 与运算 | 或运算 | 异或运算 | 取反运算 |</p>
+<p><strong>注</strong>：无&lt;&lt;&lt;</p>
+<blockquote>
+<p>位运算是直接对整数的二进制进行的运算，操作的都是整型的数据</p>
+<ol>
+<li>&lt;&lt;：在一定范围内，每向左移1位，相当于 * 2</li>
+<li>&gt;&gt;：在一定范围内，每向右移1位，相当于 / 2</li>
+</ol>
+</blockquote>
+<h3 id="六、三元运算符"><a href="#六、三元运算符" class="headerlink" title="六、三元运算符"></a>六、三元运算符</h3><p><strong>格式</strong>：<code>(条件表达式)?表达式 1:表达式 2;</code></p>
+<p><strong>1</strong> 条件表达式的结果为<strong>boolean</strong>类型 </p>
+<p><strong>2</strong> 根据条件表达式真或假，决定执行表达式1，还是表达式2.</p>
+<p>​     如果表达式为true，则执行表达式1。<br>​     如果表达式为false，则执行表达式2。</p>
+<p><strong>3</strong> 表达式1 和表达式2要求是一致的。</p>
+<p><strong>4</strong> 三元运算符可以嵌套使用</p>
+<p><strong>5</strong> 凡是可以使用三元运算符的地方，都可以改写为if-else；反之，不成立。</p>
+<p><strong>6</strong> 如果程序既可以使用三元运算符，又可以使用if-else结构，那么优先选择三元运算符。原因：简洁、执行效率高。</p>
 
     
 
@@ -385,7 +433,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://actionding.github.io/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%91%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://actionding.github.io/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%913%20%E8%BF%90%E7%AE%97%E7%AC%A6/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -400,18 +448,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%91%E5%8F%98%E9%87%8F/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          【Java基础】变量
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%91Java%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">【Java基础】Java语言概述</div>
+    <a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%912%20%E5%8F%98%E9%87%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">【Java基础】2 变量</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -438,7 +477,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、第一个Java程序"><span class="toc-number">1.</span> <span class="toc-text">一、第一个Java程序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-编译运行过程"><span class="toc-number">1.1.</span> <span class="toc-text">1 编译运行过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-具体步骤"><span class="toc-number">1.2.</span> <span class="toc-text">2 具体步骤</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、注释"><span class="toc-number">2.</span> <span class="toc-text">二、注释</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-单行注释"><span class="toc-number">2.1.</span> <span class="toc-text">1 单行注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-多行注释"><span class="toc-number">2.2.</span> <span class="toc-text">2 多行注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-文档注释"><span class="toc-number">2.3.</span> <span class="toc-text">3 文档注释</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#附"><span class="toc-number">3.</span> <span class="toc-text">附</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、算术运算符"><span class="toc-number">1.</span> <span class="toc-text">一、算术运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、赋值运算符"><span class="toc-number">2.</span> <span class="toc-text">二、赋值运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、比较运算符"><span class="toc-number">3.</span> <span class="toc-text">三、比较运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、逻辑运算符"><span class="toc-number">4.</span> <span class="toc-text">四、逻辑运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、位运算符"><span class="toc-number">5.</span> <span class="toc-text">五、位运算符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#六、三元运算符"><span class="toc-number">6.</span> <span class="toc-text">六、三元运算符</span></a></li></ol>
                     </div>
                 </span>
             </div>
