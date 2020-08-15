@@ -10,19 +10,19 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="标识符、保留字、变量">
+  <meta name="description" content="关键字、保留字、标识符、变量、自动类型转换、强制类型转换">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【Java基础】2-变量">
 <meta property="og:url" content="https://actionding.github.io/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%912-%E5%8F%98%E9%87%8F/index.html">
 <meta property="og:site_name" content="首页-丁康健的个人博客">
-<meta property="og:description" content="标识符、保留字、变量">
+<meta property="og:description" content="关键字、保留字、标识符、变量、自动类型转换、强制类型转换">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://actionding.github.io/2020/07/images/%E5%85%B3%E9%94%AE%E5%AD%971.png">
 <meta property="og:image" content="https://actionding.github.io/2020/07/images/%E5%85%B3%E9%94%AE%E5%AD%972.png">
 <meta property="og:image" content="https://actionding.github.io/2020/07/images/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png">
 <meta property="og:image" content="https://actionding.github.io/2020/07/images/%E5%8F%98%E9%87%8F.png">
-<meta property="article:published_time" content="2020-07-04T19:02:03.000Z">
-<meta property="article:modified_time" content="2020-07-20T03:26:46.746Z">
+<meta property="article:published_time" content="2020-07-04T19:02:02.000Z">
+<meta property="article:modified_time" content="2020-08-15T01:15:07.085Z">
 <meta property="article:author" content="丁康健">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="编程">
@@ -213,7 +213,7 @@
         </span>
 
 <a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%912-%E5%8F%98%E9%87%8F/" class="archive-article-date">
-        <time datetime="2020-07-04T19:02:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
+        <time datetime="2020-07-04T19:02:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
 </a>
 
   
@@ -246,15 +246,18 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>标识符、保留字、变量</p>
+    <p>关键字、保留字、标识符、变量、自动类型转换、强制类型转换</p>
 <a id="more"></a>
 
-<h3 id="一、关键字与保留字"><a href="#一、关键字与保留字" class="headerlink" title="一、关键字与保留字"></a>一、关键字与保留字</h3><h4 id="1-关键字-keyword"><a href="#1-关键字-keyword" class="headerlink" title="1 关键字(keyword)"></a>1 关键字(keyword)</h4><p><strong>定义</strong>： 被 Java 语言赋予了特殊含义，用做专门用途的字符串（单词）</p>
-<p><strong>特点</strong>： 关键字中所有字母都为<strong>小写</strong></p>
+<h3 id="一、关键字与保留字"><a href="#一、关键字与保留字" class="headerlink" title="一、关键字与保留字"></a>一、关键字与保留字</h3><h4 id="1-关键字-keyword"><a href="#1-关键字-keyword" class="headerlink" title="1 关键字(keyword)"></a>1 关键字(keyword)</h4><p><strong>定义</strong></p>
+<p>​     被 Java 语言赋予了特殊含义，用做专门用途的字符串（单词）</p>
+<p><strong>特点</strong></p>
+<p>​    关键字中所有字母都为<strong>小写</strong></p>
 <p><strong><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html" target="_blank" rel="noopener">官方地址</a></strong></p>
 <p><img src="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%912-%E5%8F%98%E9%87%8F/../images/%E5%85%B3%E9%94%AE%E5%AD%971.png" alt="关键字1"></p>
 <p><img src="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%912-%E5%8F%98%E9%87%8F/../images/%E5%85%B3%E9%94%AE%E5%AD%972.png" alt="关键字2"></p>
-<h4 id="2-保留字-reserved-word"><a href="#2-保留字-reserved-word" class="headerlink" title="2 保留字(reserved word)"></a>2 保留字(reserved word)</h4><p><strong>保留字</strong>：现有 Java 版本尚未使用,但以后版本可能会作为关键字使用。自己命名标识符时要避免使用这些保留字</p>
+<h4 id="2-保留字-reserved-word"><a href="#2-保留字-reserved-word" class="headerlink" title="2 保留字(reserved word)"></a>2 保留字(reserved word)</h4><p><strong>保留字</strong></p>
+<p>​    现有 Java 版本尚未使用,但以后版本可能会作为关键字使用。自己命名标识符时要避免使用这些保留字</p>
 <ul>
 <li><strong>goto</strong> 、 <strong>const</strong></li>
 <li>命名标识符时要避免使用这些保留字</li>
@@ -272,28 +275,28 @@
 <li>标识符不能包含空格。</li>
 </ul>
 <h4 id="3-命名规范"><a href="#3-命名规范" class="headerlink" title="3 命名规范"></a>3 命名规范</h4><ul>
-<li>包名：xxxyyyzzz</li>
-<li>类名、接口名：XxxYyyZzz</li>
-<li>变量名、方法名：xxxYyyZzz</li>
-<li>常亮名：XXX_YYY_ZZZ</li>
+<li>包名：<code>xxxyyyzzz</code></li>
+<li>类名、接口名：<code>XxxYyyZzz</code></li>
+<li>变量名、方法名：<code>xxxYyyZzz</code></li>
+<li>常亮名：<code>XXX_YYY_ZZZ</code></li>
 </ul>
 <blockquote>
 <p>在起名字时，为了提高阅读性，要尽量意义，“见名知意”。</p>
 </blockquote>
-<h3 id="三、变量"><a href="#三、变量" class="headerlink" title="三、变量"></a>三、变量</h3><h4 id="1-定义变量"><a href="#1-定义变量" class="headerlink" title="1 定义变量"></a>1 定义变量</h4><p><strong>格式</strong>：</p>
+<h3 id="三、变量"><a href="#三、变量" class="headerlink" title="三、变量"></a>三、变量</h3><h4 id="1-定义变量"><a href="#1-定义变量" class="headerlink" title="1 定义变量"></a>1 定义变量</h4><p><strong>格式</strong></p>
 <ol>
 <li>数据类型  变量名 = 变量值;</li>
-<li>数据类型  变量名;<br>变量名 = 变量值;</li>
-</ol>
-<p><strong>注</strong>：</p>
+<li>数据类型  变量名;<br>变量名 = 变量值;<blockquote>
+<p><strong>注意</strong></p>
 <ol>
 <li>变量必须先声明，后使用</li>
 <li>变量都定义在其<strong>作用域</strong>内</li>
 <li>同一个作用域内，不可以声明两个同名的变量</li>
 </ol>
+</blockquote>
+</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">VariableTest</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		<span class="comment">//变量的定义</span></span><br><span class="line">		<span class="keyword">int</span> myAge = <span class="number">22</span>;</span><br><span class="line">		<span class="comment">//变量的使用</span></span><br><span class="line">		System.out.println(myAge);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//变量的声明</span></span><br><span class="line">		<span class="keyword">int</span> myNumber;</span><br><span class="line">		<span class="comment">//System.out.println(myNnmber);//赋值后才能使用</span></span><br><span class="line">		<span class="comment">//变量的赋值</span></span><br><span class="line">		myNumber = <span class="number">1001</span>;</span><br><span class="line">		System.out.println(myNumber);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span> <span class="params">()</span></span>&#123;</span><br><span class="line">			</span><br><span class="line">			<span class="comment">//作用域不同，可以定义同名变量</span></span><br><span class="line">			<span class="comment">//变量的定义</span></span><br><span class="line">			<span class="keyword">int</span> myAge = <span class="number">22</span>;</span><br><span class="line">			<span class="comment">//变量的使用</span></span><br><span class="line">			System.out.println(myAge);</span><br><span class="line">	</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
 
 <h4 id="2-变量的分类"><a href="#2-变量的分类" class="headerlink" title="2 变量的分类"></a>2 变量的分类</h4><h5 id="按数据类型分类"><a href="#按数据类型分类" class="headerlink" title="按数据类型分类"></a>按数据类型分类</h5><p><img src="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%912-%E5%8F%98%E9%87%8F/../images/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.png" alt="数据类型"></p>
 <h5 id="按声明的位置分类"><a href="#按声明的位置分类" class="headerlink" title="*按声明的位置分类"></a>*按声明的位置分类</h5><p><img src="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%912-%E5%8F%98%E9%87%8F/../images/%E5%8F%98%E9%87%8F.png" alt="变量"></p>
@@ -376,10 +379,10 @@
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">VariableTest2</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">byte</span> b1 = <span class="number">2</span>;</span><br><span class="line">		<span class="keyword">int</span> i1 = <span class="number">129</span>;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">int</span> i2 = b1 + i1;</span><br><span class="line">		<span class="keyword">long</span> l = b1 + i1;</span><br><span class="line">		<span class="keyword">float</span> f = b1 + i1;</span><br><span class="line">		System.out.println(i2);</span><br><span class="line">		System.out.println(l);</span><br><span class="line">		System.out.println(f);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">short</span> s1 = <span class="number">123</span>;</span><br><span class="line">		<span class="keyword">double</span> d1 = s1;</span><br><span class="line">		System.out.println(d1);<span class="comment">//123.0</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">//***************特别地*********************</span></span><br><span class="line">		<span class="keyword">char</span> c1 = <span class="string">'a'</span>;<span class="comment">//97</span></span><br><span class="line">		<span class="keyword">int</span> i3 = <span class="number">10</span>;</span><br><span class="line">		<span class="keyword">int</span> i4 = c1 + i3;</span><br><span class="line">		System.out.println(i4);</span><br><span class="line"></span><br><span class="line">		<span class="keyword">short</span> s2 = <span class="number">10</span>;</span><br><span class="line">		<span class="keyword">byte</span> b2 = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//char c3 = c1 + b2;//编译不通过</span></span><br><span class="line">		<span class="comment">//short s3 = b2 + s2;//编译不通过</span></span><br><span class="line">		<span class="comment">//short s4 = b1 + b2;//编译不通过</span></span><br><span class="line">		<span class="comment">//****************************************</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-<h3 id="五、强制类型转换"><a href="#五、强制类型转换" class="headerlink" title="五、强制类型转换"></a>五、强制类型转换</h3><p>强转符：()</p>
-<p><strong>注</strong>：强制类型转换，可能导致精度损失。</p>
+<h3 id="五、强制类型转换"><a href="#五、强制类型转换" class="headerlink" title="五、强制类型转换"></a>五、强制类型转换</h3><p><strong>强转符</strong>：()</p>
+<blockquote>
+<p><strong>注意</strong>：强制类型转换，可能导致精度损失。</p>
+</blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">VariableTest3</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="keyword">double</span> d1 = <span class="number">12.9</span>;</span><br><span class="line">		<span class="comment">//精度损失举例1</span></span><br><span class="line">		<span class="keyword">int</span> i1 = (<span class="keyword">int</span>)d1;<span class="comment">//截断操作</span></span><br><span class="line">		System.out.println(i1);</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//没有精度损失</span></span><br><span class="line">		<span class="keyword">long</span> l1 = <span class="number">123</span>;</span><br><span class="line">		<span class="keyword">short</span> s2 = (<span class="keyword">short</span>)l1;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//精度损失举例2</span></span><br><span class="line">		<span class="keyword">int</span> i2 = <span class="number">128</span>;</span><br><span class="line">		<span class="keyword">byte</span> b = (<span class="keyword">byte</span>)i2;</span><br><span class="line">		System.out.println(b);<span class="comment">//-128</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 

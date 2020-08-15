@@ -6,26 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://ActionDing.github.io">
-  <title>【Java基础】1-第一个Java程序 | 首页-丁康健的个人博客</title>
+  <title>【Java基础】6-数组 | 首页-丁康健的个人博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="国际惯例 123456&#x2F;&#x2F; 打印 Hello Worldpublic class HelloWorld &amp;#123;    public static void main(String[] args) &amp;#123;        System.out.println(&quot;Hello World&quot;);    &amp;#125;&amp;#125;">
+  <meta name="description" content="数组、一维数组、二维数组">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Java基础】1-第一个Java程序">
-<meta property="og:url" content="https://actionding.github.io/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%911-%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/index.html">
+<meta property="og:title" content="【Java基础】6-数组">
+<meta property="og:url" content="https://actionding.github.io/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%916-%E6%95%B0%E7%BB%84/index.html">
 <meta property="og:site_name" content="首页-丁康健的个人博客">
-<meta property="og:description" content="国际惯例 123456&#x2F;&#x2F; 打印 Hello Worldpublic class HelloWorld &amp;#123;    public static void main(String[] args) &amp;#123;        System.out.println(&quot;Hello World&quot;);    &amp;#125;&amp;#125;">
+<meta property="og:description" content="数组、一维数组、二维数组">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://actionding.github.io/2020/07/images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
-<meta property="og:image" content="https://actionding.github.io/2020/07/images/helloworld.png">
-<meta property="article:published_time" content="2020-07-04T19:02:01.000Z">
-<meta property="article:modified_time" content="2020-08-15T00:58:44.984Z">
+<meta property="article:published_time" content="2020-07-04T19:02:06.000Z">
+<meta property="article:modified_time" content="2020-08-15T03:02:15.461Z">
 <meta property="article:author" content="丁康健">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://actionding.github.io/2020/07/images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png">
   
     <link rel="alternative" href="/atom.xml" title="首页-丁康健的个人博客" type="application/atom+xml">
   
@@ -191,14 +188,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-【Java基础】1-第一个Java程序" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-【Java基础】6-数组" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      【Java基础】1-第一个Java程序
+      【Java基础】6-数组
     </h1>
   
 
@@ -210,8 +207,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%911-%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/" class="archive-article-date">
-        <time datetime="2020-07-04T19:02:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
+<a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%916-%E6%95%B0%E7%BB%84/" class="archive-article-date">
+        <time datetime="2020-07-04T19:02:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-05</time>
 </a>
 
   
@@ -224,7 +221,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">410字</span>
+      <span class="post-count">2.1k字</span>
     </span>
   </span>
 
@@ -233,7 +230,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
+      <span class="post-count">9分</span>
     </span>
   </span>
 </div>
@@ -244,40 +241,176 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p><strong>国际惯例</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 打印 Hello World</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"Hello World"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+    <p>数组、一维数组、二维数组</p>
 <a id="more"></a>
 
-<h3 id="一、第一个Java程序"><a href="#一、第一个Java程序" class="headerlink" title="一、第一个Java程序"></a>一、第一个Java程序</h3><h4 id="1-编译运行过程"><a href="#1-编译运行过程" class="headerlink" title="1 编译运行过程"></a>1 编译运行过程</h4><p>① 将 Java 代码编写到扩展名为 .java 的文件中。</p>
-<p>② 通过 javac 命令对该 java 文件进行<strong>编译</strong> 。</p>
-<p>③ 通过 java 命令对生成的 class 文件进行<strong>运行</strong> 。</p>
-<p><img src="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%911-%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/../images/%E7%BC%96%E8%AF%91%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B.png" alt="编译运行过程"></p>
-<h4 id="2-具体步骤"><a href="#2-具体步骤" class="headerlink" title="2 具体步骤"></a>2 具体步骤</h4><p><strong>步骤一</strong>：打开记事本，输入以上代码，保存为 <code>HelloWorld.java</code></p>
-<p><strong>步骤二</strong>：在保存文件的位置打开命令行，输入<code>javac HelloWorld.java</code>，会生成一个HelloWorld.class文件</p>
-<p><strong>步骤三</strong>：命令行继续输入<code>java HelloWorld</code></p>
-<p><img src="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%911-%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/../images/helloworld.png" alt="helloworld"></p>
-<h3 id="二、注释"><a href="#二、注释" class="headerlink" title="二、注释"></a>二、注释</h3><h4 id="1-单行注释"><a href="#1-单行注释" class="headerlink" title="1 单行注释"></a>1 单行注释</h4><p>​    <strong>格式</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//注释文字</span></span><br></pre></td></tr></table></figure>
+<h3 id="一、数组的概念"><a href="#一、数组的概念" class="headerlink" title="一、数组的概念"></a>一、数组的概念</h3><h4 id="1-数组的理解"><a href="#1-数组的理解" class="headerlink" title="1 数组的理解"></a>1 数组的理解</h4><p>数组 (<strong>Array</strong>) 是多个相同类型数据按一定顺序排列的集合，并使用一个名字命名，并通过编号的方式对这些数据进行统一管理。</p>
+<h4 id="2-相关的概念"><a href="#2-相关的概念" class="headerlink" title="2 相关的概念"></a>2 相关的概念</h4><p>1）<strong>数组名</strong></p>
+<p>2）<strong>元素</strong></p>
+<p>3）<strong>索引</strong>：角标、下标、</p>
+<p>4）<strong>数组的长度</strong>：元素的个数</p>
+<h4 id="3-数组的特点"><a href="#3-数组的特点" class="headerlink" title="3 数组的特点"></a>3 数组的特点</h4><p>1）数组是有序排列的</p>
+<p>2）数组属于<strong>引用数据类型</strong>的变量。数组的元素，既可以是基本数据类型，也可以是引用数据类型</p>
+<p>3）创建数组对象会在内存中开辟一整块连续的空间</p>
+<p>4）数组的长度一旦确定，就不能修改</p>
+<h4 id="4-数组的分类"><a href="#4-数组的分类" class="headerlink" title="4 数组的分类"></a>4 数组的分类</h4><p>1）按照维数：一维数组、二维数组……</p>
+<p>2）按照数组元素的类型：基本数据类型元素的数组、引用数据类型元素的数组</p>
+<h3 id="二、一维数组"><a href="#二、一维数组" class="headerlink" title="二、一维数组"></a>二、一维数组</h3><h4 id="1-声明与初始化"><a href="#1-声明与初始化" class="headerlink" title="1 声明与初始化"></a>1 声明与初始化</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] ids;<span class="comment">//声明</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//①静态初始化:数组的初始化和数组元素的赋值操作同时进行</span></span><br><span class="line">ids = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1001</span>,<span class="number">1002</span>,<span class="number">1003</span>,<span class="number">1004</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//②动态初始化:数组的初始化和数组元素的赋值操作分开进行</span></span><br><span class="line">String[] names = <span class="keyword">new</span> String[<span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span>[] arr4 = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;<span class="comment">//类型推断</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="2-多行注释"><a href="#2-多行注释" class="headerlink" title="2 多行注释"></a>2 多行注释</h4><p>​    <strong>格式</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">注释文字 </span></span><br><span class="line"><span class="comment">注释文字 </span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-调用数组的指定位置的元素"><a href="#2-调用数组的指定位置的元素" class="headerlink" title="2 调用数组的指定位置的元素"></a>2 调用数组的指定位置的元素</h4><p>通过角标的方式调用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">names[<span class="number">0</span>] = <span class="string">"王铭"</span>;</span><br><span class="line">names[<span class="number">1</span>] = <span class="string">"王赫"</span>;</span><br><span class="line">names[<span class="number">2</span>] = <span class="string">"张学良"</span>;</span><br><span class="line">names[<span class="number">3</span>] = <span class="string">"孙居龙"</span>;</span><br><span class="line">names[<span class="number">4</span>] = <span class="string">"王宏志"</span>;</span><br></pre></td></tr></table></figure>
 
-<h4 id="3-文档注释"><a href="#3-文档注释" class="headerlink" title="3 文档注释"></a>3 文档注释</h4><p>​    <strong>格式</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"><span class="doctag">@author</span> 指定 java 程序的作者</span></span><br><span class="line"><span class="comment"><span class="doctag">@version</span> 指定源文件的版本</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-数组的长度"><a href="#3-数组的长度" class="headerlink" title="3 数组的长度"></a>3 数组的长度</h4><p>数组一旦初始化，其长度就是确定的，就不可修改。使用<code>arr.length</code>获取数组的长度。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(names.length);<span class="comment">//5</span></span><br><span class="line">System.out.println(ids.length);</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>注释内容可以被 JDK 提供的工具 javadoc 所解析，生成一套以网页文件形式体现的该程序的说明文档。</p>
-</blockquote>
-<p>​    <strong>操作方式</strong>：<code>javadoc -d mydoc -author -version HelloWorld.java</code></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">Java注释的三种方式：</span></span><br><span class="line"><span class="comment">①单行注释</span></span><br><span class="line"><span class="comment">②多行注释</span></span><br><span class="line"><span class="comment">③文档注释（Java特有）</span></span><br><span class="line"><span class="comment">	生成文档：javadoc -d mydoc -author -version HelloJava.java</span></span><br><span class="line"><span class="comment">	mydoc为文档目录</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*****这属于多行注释*****</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"><span class="doctag">@author</span> Ding</span></span><br><span class="line"><span class="comment"><span class="doctag">@version</span> 1.0</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*****这属于文档注释*****</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloJava</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//main方法是程序的入口	*****这属于单行注释*****</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="comment">//打印HelloJava	</span></span><br><span class="line">		System.out.println(<span class="string">"HelloJava"</span>);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="4-遍历数组"><a href="#4-遍历数组" class="headerlink" title="4 遍历数组"></a>4 遍历数组</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; names.length;i++)&#123;</span><br><span class="line">	System.out.println(names[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h4 id="5-数组元素的默认初始化值"><a href="#5-数组元素的默认初始化值" class="headerlink" title="5 数组元素的默认初始化值"></a>5 数组元素的默认初始化值</h4><p>1）数组元素是整型：0</p>
+<p>2）数组元素是浮点型：0.0</p>
+<p>3）数组元素是char型：0 或 ‘\u0000’，而非 ‘0’</p>
+<p>4）数组元素是boolean型：false</p>
+<p>5）数组元素是引用数据类型：null</p>
+<h3 id="三、二维数组"><a href="#三、二维数组" class="headerlink" title="三、二维数组"></a>三、二维数组</h3><h4 id="1-理解二维数组"><a href="#1-理解二维数组" class="headerlink" title="1 理解二维数组"></a>1 理解二维数组</h4><p>一个一维数组A的元素如果还是一个一维数组类型的，则，此数组A称为二维数组</p>
+<h4 id="2-声明与初始化"><a href="#2-声明与初始化" class="headerlink" title="2 声明与初始化"></a>2 声明与初始化</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">int[][] arr1;&#x2F;&#x2F;声明</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;静态初始化</span><br><span class="line">arr1 &#x3D; new int[][]&#123;&#123;1,2,3&#125;,&#123;4,5&#125;,&#123;6,7,8&#125;&#125;;</span><br><span class="line">&#x2F;&#x2F;动态初始化1</span><br><span class="line">String[][] arr2 &#x3D; new String[3][2];</span><br><span class="line">&#x2F;&#x2F;动态初始化2</span><br><span class="line">String[][] arr3 &#x3D; new String[3][];</span><br><span class="line"></span><br><span class="line">int[] arr4[] &#x3D; new int[][]&#123;&#123;1,2,3&#125;,&#123;4,5,9,10&#125;,&#123;6,7,8&#125;&#125;;&#x2F;&#x2F;也是正确的写法</span><br><span class="line">int[] arr5[] &#x3D; &#123;&#123;1,2,3&#125;,&#123;4,5&#125;,&#123;6,7,8&#125;&#125;;&#x2F;&#x2F;类型推断</span><br></pre></td></tr></table></figure>
 
+<h4 id="3-调用数组的指定位置的元素"><a href="#3-调用数组的指定位置的元素" class="headerlink" title="3 调用数组的指定位置的元素"></a>3 调用数组的指定位置的元素</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(arr1[<span class="number">0</span>][<span class="number">1</span>]);<span class="comment">//2</span></span><br><span class="line">System.out.println(arr2[<span class="number">1</span>][<span class="number">1</span>]);<span class="comment">//null</span></span><br><span class="line"></span><br><span class="line">arr3[<span class="number">1</span>] = <span class="keyword">new</span> String[<span class="number">4</span>];</span><br><span class="line">System.out.println(arr3[<span class="number">1</span>][<span class="number">0</span>]);</span><br><span class="line">System.out.println(arr3[<span class="number">0</span>]);<span class="comment">//</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="附"><a href="#附" class="headerlink" title="附"></a>附</h3><p><strong>Tips | 文件资源管理器</strong></p>
-<p>①<code>win + E</code>打开文件资源管理器</p>
-<p>②在地址栏输入 <code>cmd</code> 回车即可打开<strong>命令行</strong></p>
-<p>③在查看工具栏中，打开<code>隐藏/显示</code>中的 <code>文件扩展名</code></p>
+<h4 id="4-数组的长度"><a href="#4-数组的长度" class="headerlink" title="4 数组的长度"></a>4 数组的长度</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(arr4.length);<span class="comment">//3</span></span><br><span class="line">System.out.println(arr4[<span class="number">0</span>].length);<span class="comment">//3</span></span><br><span class="line">System.out.println(arr4[<span class="number">1</span>].length);<span class="comment">//4</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-遍历二维数组元素"><a href="#5-遍历二维数组元素" class="headerlink" title="5 遍历二维数组元素"></a>5 遍历二维数组元素</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr4.length;i++)&#123;			</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; arr4[i].length;j++)&#123;</span><br><span class="line">			System.out.print(arr4[i][j] + <span class="string">"  "</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-默认初始化值"><a href="#6-默认初始化值" class="headerlink" title="6 默认初始化值"></a>6 默认初始化值</h4><p>二维数组分为外层数组的元素，内层数组的元素</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>][<span class="number">3</span>];</span><br><span class="line"></span><br><span class="line">外层元素：arr[<span class="number">0</span>],arr[<span class="number">1</span>]等</span><br><span class="line"></span><br><span class="line">内层元素：arr[<span class="number">0</span>][<span class="number">0</span>],arr[<span class="number">1</span>][<span class="number">2</span>]等</span><br></pre></td></tr></table></figure>
+
+<p>1）针对于初始化方式一</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>][<span class="number">3</span>];</span><br></pre></td></tr></table></figure>
+
+<p>外层元素的初始化值为：<strong>地址值</strong></p>
+<p>内层元素的初始化值为：与一维数组初始化情况相同</p>
+<p>2）针对于初始化方式二</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[][] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>][];</span><br></pre></td></tr></table></figure>
+
+<p>外层元素的初始化值为：<strong>null</strong></p>
+<p>内层元素的初始化值为：不能调用，否则报错。</p>
+<h3 id="四、数组的常见算法"><a href="#四、数组的常见算法" class="headerlink" title="四、数组的常见算法"></a>四、数组的常见算法</h3><h4 id="1-数组的创建与元素赋值"><a href="#1-数组的创建与元素赋值" class="headerlink" title="1 数组的创建与元素赋值"></a>1 数组的创建与元素赋值</h4><p>杨辉三角（二维数组）、回形数（二维数组）、6个数，1-30之间随机生成且不重复。</p>
+<h4 id="2-对于数值型的数组"><a href="#2-对于数值型的数组" class="headerlink" title="2 对于数值型的数组"></a>2 对于数值型的数组</h4><p>最大值、最小值、总和、平均数</p>
+<h4 id="3-数组的赋值与复制"><a href="#3-数组的赋值与复制" class="headerlink" title="3 数组的赋值与复制"></a>3 数组的赋值与复制</h4><p><strong>1）赋值</strong></p>
+<p>两个变量指向同一个数组的地址，修改一个数组的元素，另一个也跟着修改。</p>
+<p><strong>2）复制</strong></p>
+<p>两个独立的数组，数组的元素相同。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr1,arr2;</span><br><span class="line">arr1 = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//赋值</span></span><br><span class="line">arr2 = arr1;</span><br><span class="line"></span><br><span class="line"><span class="comment">//复制</span></span><br><span class="line">arr2 = <span class="keyword">new</span> <span class="keyword">int</span>[arr1.length];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr2.length;i++)&#123;</span><br><span class="line">	arr2[i] = arr1[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-反转"><a href="#4-反转" class="headerlink" title="4 反转"></a>4 反转</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//方法一：</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr.length / <span class="number">2</span>;i++)&#123;</span><br><span class="line">		String temp = arr[i];</span><br><span class="line">		arr[i] = arr[arr.length - i -<span class="number">1</span>];</span><br><span class="line">		arr[arr.length - i -<span class="number">1</span>] = temp;</span><br><span class="line">	&#125;</span><br><span class="line">		</span><br><span class="line"><span class="comment">//方法二：</span></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>,j = arr.length - <span class="number">1</span>;i &lt; j;i++,j--)&#123;</span><br><span class="line">		String temp = arr[i];</span><br><span class="line">		arr[i] = arr[j];</span><br><span class="line">		arr[j] = temp;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-查找"><a href="#5-查找" class="headerlink" title="5 查找"></a>5 查找</h4><p><strong>1）线性查找</strong> </p>
+<p><strong>实现思路</strong>：通过遍历的方式，一个一个的数据进行比较、查找</p>
+<p><strong>适用性</strong>：具有普遍适用性。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">boolean</span> isFlag = <span class="keyword">true</span>;</span><br><span class="line">		</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr.length;i++)&#123;			</span><br><span class="line">	<span class="keyword">if</span>(dest.equals(arr[i]))&#123;</span><br><span class="line">		System.out.println(<span class="string">"找到了指定的元素，位置为："</span> + i);</span><br><span class="line">		isFlag = <span class="keyword">false</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	&#125;			</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(isFlag)&#123;</span><br><span class="line">	System.out.println(<span class="string">"很遗憾，没有找到的啦！"</span>);			</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2）二分法查找</strong></p>
+<p><strong>实现思路</strong>：每次比较中间值，折半的方式检索</p>
+<p><strong>适用性</strong>：（前提：数组必须有序）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> head = <span class="number">0</span>;<span class="comment">//初始的首索引</span></span><br><span class="line"><span class="keyword">int</span> end = arr.length - <span class="number">1</span>;<span class="comment">//初始的末索引</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">boolean</span> isFlag = <span class="keyword">true</span>;</span><br><span class="line"><span class="keyword">while</span>(head &lt;= end)&#123;	</span><br><span class="line">	<span class="keyword">int</span> middle = (head + end)/<span class="number">2</span>;	</span><br><span class="line">	<span class="keyword">if</span>(dest == arr[middle])&#123;</span><br><span class="line">		System.out.println(<span class="string">"找到了指定的元素，位置为："</span> + middle);</span><br><span class="line">		isFlag = <span class="keyword">false</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span>(arr[middle] &gt; dest1)&#123;</span><br><span class="line">		end = middle - <span class="number">1</span>;</span><br><span class="line">	&#125;<span class="keyword">else</span>&#123;<span class="comment">//arr[middle] &lt; dest1</span></span><br><span class="line">		head = middle + <span class="number">1</span>;</span><br><span class="line">	&#125;			</span><br><span class="line">&#125;</span><br><span class="line">		</span><br><span class="line"><span class="keyword">if</span>(isFlag)&#123;</span><br><span class="line">	System.out.println(<span class="string">"很遗憾，没有找到的啦！"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="6-排序"><a href="#6-排序" class="headerlink" title="6 排序"></a>6 排序</h4><table>
+<thead>
+<tr>
+<th align="center">排序算法</th>
+<th align="center">平均时间复杂度</th>
+<th align="center">最差时间复杂度</th>
+<th align="center">空间复杂度</th>
+<th align="center">数据对象稳定性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">冒泡排序</td>
+<td align="center">O(n2)</td>
+<td align="center">O(n2)</td>
+<td align="center">O(1)</td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">选择排序</td>
+<td align="center">O(n2)</td>
+<td align="center">O(n2)</td>
+<td align="center">O(1)</td>
+<td align="center">数组不稳定、链表稳定</td>
+</tr>
+<tr>
+<td align="center">插入排序</td>
+<td align="center">O(n2)</td>
+<td align="center">O(n2)</td>
+<td align="center">O(1)</td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">快速排序</td>
+<td align="center">O(n*log2n)</td>
+<td align="center">O(n2)</td>
+<td align="center">O(log2n)</td>
+<td align="center">不稳定</td>
+</tr>
+<tr>
+<td align="center">堆排序</td>
+<td align="center">O(n*log2n)</td>
+<td align="center">O(n*log2n)</td>
+<td align="center">O(1)</td>
+<td align="center">不稳定</td>
+</tr>
+<tr>
+<td align="center">归并排序</td>
+<td align="center">O(n*log2n)</td>
+<td align="center">O(n*log2n)</td>
+<td align="center">O(n)</td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">希尔排序</td>
+<td align="center">O(n*log2n)</td>
+<td align="center">O(n2)</td>
+<td align="center">O(1)</td>
+<td align="center">不稳定</td>
+</tr>
+<tr>
+<td align="center">计数排序</td>
+<td align="center">O(n+m)</td>
+<td align="center">O(n+m)</td>
+<td align="center">O(n+m)</td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">桶排序</td>
+<td align="center">O(n)</td>
+<td align="center">O(n)</td>
+<td align="center">O(m)</td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">基数排序</td>
+<td align="center">O(k*n)</td>
+<td align="center">O(n2)</td>
+<td align="center"></td>
+<td align="center">稳定</td>
+</tr>
+</tbody></table>
+<p><strong>1）冒泡排序</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; arr.length - <span class="number">1</span>;i++)&#123;			</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>;j &lt; arr.length - <span class="number">1</span> - i;j++)&#123;			</span><br><span class="line">		<span class="keyword">if</span>(arr[j] &gt; arr[j + <span class="number">1</span>])&#123;</span><br><span class="line">			<span class="keyword">int</span> temp = arr[j];</span><br><span class="line">			arr[j] = arr[j + <span class="number">1</span>];</span><br><span class="line">			arr[j + <span class="number">1</span>] = temp;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;			</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>2）快速排序</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuickSort</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span>[] data, <span class="keyword">int</span> i, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">int</span> temp = data[i];</span><br><span class="line">		data[i] = data[j];</span><br><span class="line">		data[j] = temp;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">subSort</span><span class="params">(<span class="keyword">int</span>[] data, <span class="keyword">int</span> start, <span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (start &lt; end) &#123;</span><br><span class="line">			<span class="keyword">int</span> base = data[start];</span><br><span class="line">			<span class="keyword">int</span> low = start;</span><br><span class="line">			<span class="keyword">int</span> high = end + <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">while</span> (<span class="keyword">true</span>) &#123;</span><br><span class="line">				<span class="keyword">while</span> (low &lt; end &amp;&amp; data[++low] - base &lt;= <span class="number">0</span>)&#123;</span><br><span class="line">                    </span><br><span class="line">                &#125;</span><br><span class="line">				<span class="keyword">while</span> (high &gt; start &amp;&amp; data[--high] - base &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">                    </span><br><span class="line">                &#125;</span><br><span class="line">				<span class="keyword">if</span> (low &lt; high) &#123;</span><br><span class="line">					swap(data, low, high);</span><br><span class="line">				&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			swap(data, start, high);</span><br><span class="line">			</span><br><span class="line">			subSort(data, start, high - <span class="number">1</span>);<span class="comment">//递归调用</span></span><br><span class="line">			subSort(data, high + <span class="number">1</span>, end);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">    </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">quickSort</span><span class="params">(<span class="keyword">int</span>[] data)</span></span>&#123;</span><br><span class="line">		subSort(data,<span class="number">0</span>,data.length-<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="五、Array工具类"><a href="#五、Array工具类" class="headerlink" title="五、Array工具类"></a>五、Array工具类</h3><p>Arrays 定义在 <code>java.util</code> 包下，提供了很多操作数组的方法</p>
+<p>导包：<code>import java.util.Arrays;</code></p>
+<h4 id="1-equals"><a href="#1-equals" class="headerlink" title="1 equals()"></a>1 equals()</h4><p><code>boolean equals(int[] a,int[] b)</code>: 判断两个数组是否相等</p>
+<h4 id="2-toString"><a href="#2-toString" class="headerlink" title="2 toString()"></a>2 toString()</h4><p><code>String toString(int[] a)</code>: 输出数组信息</p>
+<h4 id="3-fill"><a href="#3-fill" class="headerlink" title="3 fill()"></a>3 fill()</h4><p><code>void fill(int[] a,int val)</code>: 将指定值填充到数组之中</p>
+<h4 id="4-sort"><a href="#4-sort" class="headerlink" title="4 sort()"></a>4 sort()</h4><p><code>void sort(int[] a)</code>: 对数组进行排序</p>
+<h4 id="5-binarySearch"><a href="#5-binarySearch" class="headerlink" title="5 binarySearch()"></a>5 binarySearch()</h4><p><code>int binarySearch(int[] a,int key)</code>: 二分查找</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.boolean equals(int[] a,int[] b): 判断两个数组是否相等。</span></span><br><span class="line"><span class="keyword">int</span>[] arr1 = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">int</span>[] arr2 = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">4</span>&#125;;</span><br><span class="line"><span class="keyword">boolean</span> isEquals = Arrays.equals(arr1, arr2);</span><br><span class="line">System.out.println(isEquals);</span><br><span class="line"></span><br><span class="line"><span class="comment">//2.String toString(int[] a): 输出数组信息。</span></span><br><span class="line">System.out.println(Arrays.toString(arr1));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//3.void fill(int[] a,int val): 将指定值填充到数组之中。</span></span><br><span class="line">Arrays.fill(arr1,<span class="number">10</span>);</span><br><span class="line">System.out.println(Arrays.toString(arr1));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//4.void sort(int[] a): 对数组进行排序。</span></span><br><span class="line">Arrays.sort(arr2);</span><br><span class="line">System.out.println(Arrays.toString(arr2));</span><br><span class="line"></span><br><span class="line"><span class="comment">//5.int binarySearch(int[] a,int key)</span></span><br><span class="line"><span class="keyword">int</span>[] arr3 = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;-<span class="number">98</span>,-<span class="number">34</span>,<span class="number">2</span>,<span class="number">34</span>,<span class="number">54</span>,<span class="number">66</span>,<span class="number">79</span>,<span class="number">105</span>,<span class="number">210</span>,<span class="number">333</span>&#125;;</span><br><span class="line"><span class="keyword">int</span> index = Arrays.binarySearch(arr3, <span class="number">210</span>);</span><br><span class="line"><span class="keyword">if</span>(index &gt;= <span class="number">0</span>)&#123;</span><br><span class="line">    System.out.println(index);</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"未找到"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="六、数组的常见异常"><a href="#六、数组的常见异常" class="headerlink" title="六、数组的常见异常"></a>六、数组的常见异常</h3><h4 id="1-数组角标越界异常"><a href="#1-数组角标越界异常" class="headerlink" title="1 数组角标越界异常"></a>1 数组角标越界异常</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;;</span><br><span class="line">		</span><br><span class="line"><span class="comment">//System.out.println(arr[-2]);//ArrayIndexOutOfBoundsException</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-空指针异常"><a href="#2-空指针异常" class="headerlink" title="2 空指针异常"></a>2 空指针异常</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">		<span class="comment">//情况一：</span></span><br><span class="line">		<span class="keyword">int</span>[] arr1 = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">		arr1 = <span class="keyword">null</span>;</span><br><span class="line"><span class="comment">//		System.out.println(arr1[0]);//NullPointerException</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//情况二：</span></span><br><span class="line">		<span class="keyword">int</span>[][] arr2 = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>][];</span><br><span class="line"><span class="comment">//		System.out.println(arr2[0][0]);//NullPointerException</span></span><br></pre></td></tr></table></figure>
 
     
 
@@ -392,7 +525,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://actionding.github.io/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%911-%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://actionding.github.io/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%916-%E6%95%B0%E7%BB%84/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -407,18 +540,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%912-%E5%8F%98%E9%87%8F/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          【Java基础】2-变量
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%910-Java%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">【Java基础】0-Java语言概述</div>
+    <a href="/2020/07/%E3%80%90Java%E5%9F%BA%E7%A1%80%E3%80%915-%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6%E4%B9%8B%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">【Java基础】5-流程控制之循环结构</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -445,7 +569,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、第一个Java程序"><span class="toc-number">1.</span> <span class="toc-text">一、第一个Java程序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-编译运行过程"><span class="toc-number">1.1.</span> <span class="toc-text">1 编译运行过程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-具体步骤"><span class="toc-number">1.2.</span> <span class="toc-text">2 具体步骤</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、注释"><span class="toc-number">2.</span> <span class="toc-text">二、注释</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-单行注释"><span class="toc-number">2.1.</span> <span class="toc-text">1 单行注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-多行注释"><span class="toc-number">2.2.</span> <span class="toc-text">2 多行注释</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-文档注释"><span class="toc-number">2.3.</span> <span class="toc-text">3 文档注释</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#附"><span class="toc-number">3.</span> <span class="toc-text">附</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#一、数组的概念"><span class="toc-number">1.</span> <span class="toc-text">一、数组的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-数组的理解"><span class="toc-number">1.1.</span> <span class="toc-text">1 数组的理解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-相关的概念"><span class="toc-number">1.2.</span> <span class="toc-text">2 相关的概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-数组的特点"><span class="toc-number">1.3.</span> <span class="toc-text">3 数组的特点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-数组的分类"><span class="toc-number">1.4.</span> <span class="toc-text">4 数组的分类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#二、一维数组"><span class="toc-number">2.</span> <span class="toc-text">二、一维数组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-声明与初始化"><span class="toc-number">2.1.</span> <span class="toc-text">1 声明与初始化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-调用数组的指定位置的元素"><span class="toc-number">2.2.</span> <span class="toc-text">2 调用数组的指定位置的元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-数组的长度"><span class="toc-number">2.3.</span> <span class="toc-text">3 数组的长度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-遍历数组"><span class="toc-number">2.4.</span> <span class="toc-text">4 遍历数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-数组元素的默认初始化值"><span class="toc-number">2.5.</span> <span class="toc-text">5 数组元素的默认初始化值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三、二维数组"><span class="toc-number">3.</span> <span class="toc-text">三、二维数组</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-理解二维数组"><span class="toc-number">3.1.</span> <span class="toc-text">1 理解二维数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-声明与初始化"><span class="toc-number">3.2.</span> <span class="toc-text">2 声明与初始化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-调用数组的指定位置的元素"><span class="toc-number">3.3.</span> <span class="toc-text">3 调用数组的指定位置的元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-数组的长度"><span class="toc-number">3.4.</span> <span class="toc-text">4 数组的长度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-遍历二维数组元素"><span class="toc-number">3.5.</span> <span class="toc-text">5 遍历二维数组元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-默认初始化值"><span class="toc-number">3.6.</span> <span class="toc-text">6 默认初始化值</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#四、数组的常见算法"><span class="toc-number">4.</span> <span class="toc-text">四、数组的常见算法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-数组的创建与元素赋值"><span class="toc-number">4.1.</span> <span class="toc-text">1 数组的创建与元素赋值</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-对于数值型的数组"><span class="toc-number">4.2.</span> <span class="toc-text">2 对于数值型的数组</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-数组的赋值与复制"><span class="toc-number">4.3.</span> <span class="toc-text">3 数组的赋值与复制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-反转"><span class="toc-number">4.4.</span> <span class="toc-text">4 反转</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-查找"><span class="toc-number">4.5.</span> <span class="toc-text">5 查找</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-排序"><span class="toc-number">4.6.</span> <span class="toc-text">6 排序</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#五、Array工具类"><span class="toc-number">5.</span> <span class="toc-text">五、Array工具类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-equals"><span class="toc-number">5.1.</span> <span class="toc-text">1 equals()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-toString"><span class="toc-number">5.2.</span> <span class="toc-text">2 toString()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-fill"><span class="toc-number">5.3.</span> <span class="toc-text">3 fill()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-sort"><span class="toc-number">5.4.</span> <span class="toc-text">4 sort()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-binarySearch"><span class="toc-number">5.5.</span> <span class="toc-text">5 binarySearch()</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#六、数组的常见异常"><span class="toc-number">6.</span> <span class="toc-text">六、数组的常见异常</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-数组角标越界异常"><span class="toc-number">6.1.</span> <span class="toc-text">1 数组角标越界异常</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-空指针异常"><span class="toc-number">6.2.</span> <span class="toc-text">2 空指针异常</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
