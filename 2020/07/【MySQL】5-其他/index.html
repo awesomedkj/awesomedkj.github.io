@@ -10,15 +10,15 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="一、视图含义：虚拟表，和普通表一样使用  mysql5.1版本出现的新特性，是通过表动态生成的数据      创建语法的关键字 是否实际占用物理空间 使用    视图 create view 只是保存了sql逻辑 增删改查，只是一般不能增删改   表 create table 保存了数据 增删改查   1 创建视图语法 12CREATE VIEW 视图名 AS查询语句; 12345678910">
+  <meta name="description" content="视图、变量、存储过程、函数、流程控制过程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【MySQL】5-其他">
 <meta property="og:url" content="https://actionding.github.io/2020/07/%E3%80%90MySQL%E3%80%915-%E5%85%B6%E4%BB%96/index.html">
 <meta property="og:site_name" content="首页-丁康健的个人博客">
-<meta property="og:description" content="一、视图含义：虚拟表，和普通表一样使用  mysql5.1版本出现的新特性，是通过表动态生成的数据      创建语法的关键字 是否实际占用物理空间 使用    视图 create view 只是保存了sql逻辑 增删改查，只是一般不能增删改   表 create table 保存了数据 增删改查   1 创建视图语法 12CREATE VIEW 视图名 AS查询语句; 12345678910">
+<meta property="og:description" content="视图、变量、存储过程、函数、流程控制过程">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-05T19:02:05.000Z">
-<meta property="article:modified_time" content="2020-08-24T05:42:16.998Z">
+<meta property="article:modified_time" content="2020-08-24T15:44:34.632Z">
 <meta property="article:author" content="丁康健">
 <meta property="article:tag" content="MySQL">
 <meta property="article:tag" content="数据库">
@@ -246,7 +246,8 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <a id="more"></a>
+    <p>视图、变量、存储过程、函数、流程控制过程</p>
+<a id="more"></a>
 
 <h3 id="一、视图"><a href="#一、视图" class="headerlink" title="一、视图"></a>一、视图</h3><p><strong>含义</strong>：虚拟表，和普通表一样使用</p>
 <blockquote>
